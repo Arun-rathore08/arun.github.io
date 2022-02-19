@@ -6,12 +6,12 @@
 
 .navbar{
   border-radius: 6px;
-  margin-left: -91px;
-  margin-right: -88px;
+  margin-left: -100px;
+  margin-right: -108px;
 }
 
 .navbar-nav{
-  margin-left: 644px;
+  margin-left: 677px;
 }
 
 form{
@@ -287,6 +287,17 @@ h2:hover span{
 
 .blogContainer{
   display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 15px;
+  padding: 19px;
+  padding-right: 240px;
+  margin-left: 100px;
+  margin-right: 108px;
+  margin-top: 45px;
+}
+
+.readmore{
+  color: blueviolet;
 }
 
 .cv{
@@ -329,4 +340,51 @@ h2:hover span{
 .cv1{
   padding: 3px;
   border-radius: 32px;
+}
+
+.Django{
+  margin-right: 400px;
+  margin-top: 10px;
+}
+
+.djangoContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.what{
+  margin-top: 50px;
+  margin-right: 504px;
+}
+
+.ans0{
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.install{
+  margin-left: 171px;
+  margin-top: 30px;
+}
+
+.install h3{
+  font-weight: bold;
+}
+
+.python{
+  font-weight: 600;
+}
+
+.toolbar { position: absolute;
+top: .3em;
+right: .2em;
+transition: opacity .3s ease-in-out;
+opacity: 5;
+}
+
+.language-python{
+  color: #fff;
+  background-color: black;
+  padding: 10px;
 }
