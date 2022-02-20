@@ -82,14 +82,37 @@
             with name "Scripts" go in the folder and type command "activate" to activate the virtual enviroment as you hit the enter button <br>
             you wiil see the enviroment is activated. You can see in the left of your directory the enviroment is visible <br><br>
             <img src="venv1.png" alt="activate" class="activate" width="390" height="180"><br><br>
-            Now we install the django inside the virtual enviroment type the command "pip install django", make sure that the virtual enviroment<br>
-            which we have created should be activated after installing django
-            and now we start our project. To start project type the given command <br><br>
+            Now we install the django inside the virtual enviroment type the command "pip install django", make sure that the virtual enviromentwhich we have created should be activated
+             after installing django and now we start our project. <br><br><hr>
+            <h3>Start Django project</h3> To start project type the given command <br><br>
             <pre class=" language-python" tabindex="0"><code class=" language-python m-2">django-admin startproject projectName</code></pre><br>
-            I have named my project "Djangoproject". In the given image after the command you can see all the libraries have been created in the Djangoproject <br>
+            I have named my project "Djangoproject". In the given image after the command you can see all the libraries have been created <br> in the Djangoproject
             folder. To start the project in the same folder in which we have enviroment folder we have to use the given command <br><br>
-            <pre class=" language-python" tabindex="0"><code class=" language-python m-2">django-admin startproject projectName .</code></pre><br>
-            </div>
+            <pre class=" language-python" tabindex="0"><code class=" language-python m-2">django-admin startproject projectName .</code></pre><br><hr>
+            <h3>Run the django server</h3><br>
+            To run the Django server use the command given below: <br><br>
+            <pre class=" language-python" tabindex="0"><code class=" language-python m-2">python manage.py runserver</code></pre><br></div>
+            As you run the server you see there is a server address provided in cmd <br><br>
+            <img src="runserver.png" alt="server" width="390" height="180"><br><br>
+            Copy the server address and open your browser than paste the server address in url like shown below: <br><br>
+            <img src="browser.png" alt="activate" class="activate" width="390" height="180"><br><br>
+            On etering the server address in browser you will reach to the official Django server page <br><br>
+            <img src="successful.png" alt="" width="390" height="180"><br><br><hr>
+            <h3>Start the App</h3> <br>
+            Now we are going to start our app forethere we have to open our command prompt and run the following command <br><br>
+            <pre class=" language-python" tabindex="0"><code class=" language-python m-2">django-admin startapp AppName</code></pre><br>
+            Now we have to open the django project in code editor. You can use any code editor you have. For django project I have used Visual Studio
+            code (VScode). Open the project folder in the VScode and go to settings in project and scroll down find INSTALLED_APPS in settings 
+            define the app name I have named the app "DjangoApp"<br><br>
+            <img src="defineapp.png" alt="env" class="venv" width="290" height="270"><br><br><hr>
+            <h3>Setup django URLS</h3><br>
+            For urls setup a urls.py file is present in project folder copy that file and paste it in app folder now go back in the 
+            project folder's urls file and include the path of app's urls file like shown in image <br><br>
+            <img src="urls.png" alt="env" class="venv" width="290" height="270"><br><br>
+            After including app urls path in project's urls we come to app folder than first we create template folder 
+            . In that folder we can create html files in templates <br><br>
+            <img src="temlpates.png" alt="env" class="venv" width="290" height="270"><br><br>
+            
           </div>
         </div>
       </div>To be continue...
