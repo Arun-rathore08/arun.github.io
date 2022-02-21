@@ -110,12 +110,50 @@
             project folder's urls file and include the path of app's urls file like shown in image <br><br>
             <img src="urls.png" alt="env" class="venv" width="290" height="270"><br><br>
             After including app urls path in project's urls we come to app folder than first we create template folder 
-            . In that folder we can create html files in templates <br><br>
-            <img src="temlpates.png" alt="env" class="venv" width="290" height="270"><br><br>
+            . In that folder we can create html files in templates I have created index.html file <br><br>
+            <img src="temlpates.png" alt="env" class="venv" width="290" height="270"><br><br><hr>
+            <h3>Views Setup</h3><br>
+            In the application folder there is views.py file in which we will create our views. We have to define our views in views.py file. <br><br>
+            <img src="views.png" alt="env" class="venv" width="290" height="270"><br><br><hr>
+            <h3>Return methods in views</h3><br>
+            In views after deining a view we have to use return method. There are three type of return method available in django views
+            the first one is "HttpResponse" method I have shown this method above in the image , second is "render" method that is default method in views this method render to the next selected 
+            html page after performing some operation like "return render('index')"  and third method is "redirect" method redirect method 
+            redirect us in the same html page like "return redirect('index.html')"
+            <br> <br>
+            <h3>Models in django</h3>
+            In the app folder there is models.py file available in which we can create our own model by creating a class 
+            we can create form model which we use in forms.py flie to create forms<br><br>
+            <img src="model.png" alt="env" class="venv" width="290" height="270"><br><br>
+            <h3>Forms in django</h3>
+            We can create our forms like login form, signup form, registration form etc. For creation of a form first we have to 
+            create a python file with name "forms.py". We can import this forms in our views file and can use them on 
+            any page we'd like <br><br>
+            <img src="form.png" alt="env" class="venv" width="290" height="270"><br><br><hr>
+            <h3>Admin pannel in django</h3>
+            Django provide its own admin pannel and we can modify this pannel according to our need.Admin pannel is like database fo your 
+            website. We can cerate users or delelte them and update their profiles in database. All the form we have created first we have 
+            to import them in admin.py file which is already provided by django. So first we will create a admin for our website 
+            . Admin is the owner of the website for creating admin we have to go in command prompt and wirte the command given below: <br><br>
+            <h4>Create Superuser</h4>
+            <pre class=" language-python" tabindex="0"><code class=" language-python m-2">python manage.py createsuperuser</code></pre><br>
+            After createing admin or superuser we have to make migrations therefore we pass a command  <br><br>
+            <h4>Migrations in django</h4>
+            <pre class=" language-python" tabindex="0"><code class=" language-python m-2">python manage.py makemigrations</code></pre><br>
+            <pre class=" language-python" tabindex="0"><code class=" language-python m-2">python manage.py migrate</code></pre><br>
+            Now we will check our admin is created or not. To check we copy the server address from cmd and paste it into the browser
+            after the address we add "/admin" to go into the admin pannel <br><br>
+            <img src="admin-url.png" alt="env" class="venv" width="350" height="270"><br><br>
+            <img src="adminpannel.png" alt="env" class="venv" width="350" height="270">
+            <img src="admin2.png" alt="env" class="venv" width="290" height="270"><br><br> <hr> 
             
+            Here you see how easier to create a website/webapplication through Django. <br>
+            I hope you got all the concepts in this Cheatsheet. if you have any problem <br> 
+            in django I have droped a link below of django documentation either you can <br> <a href="contact.html">contactMe</a><br><br>
+            <a href="https://docs.djangoproject.com/en/4.0/">Django Documentation</a>
           </div>
         </div>
-      </div>To be continue...
+      </div>
 
     </div>
 </body>
