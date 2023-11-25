@@ -45,9 +45,53 @@
       </div>
     </nav>
     </div>
-    <div class="Cform">
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNuJeFlJY69a3EGRVu2JiFpZRdnIhIGUZ32NrsTN5OOHfNYw/viewform?embedded=true" width="1500" height="830" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class="form">
+      <form id="myForm" action="submit" method="get">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+    
+        <label for="frm">Enter your query here:</label>
+        <textarea name="form" id="frm" cols="30" rows="10" placeholder="Enter your query here"></textarea>
+    
+        <button type="button" onclick="submitForm()">Submit</button>
+      </form>
     </div>
+    <script>
+      function submitForm() {
+        // Get the form element
+        var form = document.getElementById('myForm');
+        
+        // Get the values from the form
+        var email = document.getElementById('email').value;
+        var query = document.getElementById('frm').value;
+    
+        // Create an object to hold the data
+        var formData = {
+          email: email,
+          query: query
+        };
+    
+        // Use the fetch API to send the data to a server endpoint
+        fetch('https://example.com/submit', {
+          method: 'POST', // or 'GET' depending on your server setup
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+          // Handle the response from the server (if needed)
+          console.log('Server response:', data);
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
+    
+        // Reset the form after submission
+        form.reset();
+      }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
